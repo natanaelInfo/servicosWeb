@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{
+    position: fixed;
+    width: 100%;
+  
+    z-index: 1;
+
+    font-size: 16px;
+    transition: all 0.4s ease-out;
+}
+
+
+.max-header{
+    background-color:#35424a;
+    border-bottom: 3px solid  #e8491d;
+    margin: 0px auto;
+   
+}
+
+.min-header{
+    background-color:#4A708B;
+    border-bottom: 1px solid  #e8491d;
+}
+.ghost{
+    width: 100%;
+    height: 100px;
+    background: #35424a;
+    
+}
+
+.menu{
+    max-width: 940px;
+    margin: 0px auto;
+}
+
+.min-menu{
+    max-width: 940px;
+    margin: 0px auto;
+}
+
+.max-menu-h1{
+    margin: 25px auto;
+    font-size: 2.3em;
+    text-transform: capitalize;
+    float: left;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.min-menu-h1{
+    margin: 13px auto;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    float: left;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.menu::after, .menu::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu .spam1{
+    color: #e8491d;
+ 
+}
+
+.menu h1 a{
+     color: #e8491d;
+     text-decoration: none; 
+     font-size: 1.1em;
+}
+/*scrool na nav*/
+.menu-min-nav{
+    margin: 25px auto;
+    float: right;
+    transition: all 0.4s ease-out;
+}
+
+.menu-max-nav{
+    margin: 35px auto;
+    float: right;
+    transition: all 0.4s ease-out;
+}
+
+
+.menu nav ul li{
+    display:inline; 
+    padding: 20px; 
+    
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform:uppercase;
+    color:white ;
+    font-weight: bold;
+    position: relative;
+
+}
+
+
+/*animacao hover*/
+.menu nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+}
+.menu nav ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+/*responsive mobile*/
+@media screen  and (max-width: 480px) {
+    .menu{
+        max-width: 480px;
+        margin: 0px auto;
+    }
+    .menu h1{
+        margin: 15px auto;
+        font-size: 2em;
+        text-align: center;
+        float: none;
+    }
+
+    .menu nav {
+      padding:20px ; 
+      float: none;
+    }
+
+    .menu nav ul li{
+     
+        padding: 10px; 
+        
+    }
+
+    
+
+ }
+    /*responsive ipad*/
+@media screen and (max-width: 768px) {
+    .menu{
+        max-width: 768px;
+        margin: 0px auto;
+    }
+
+    .menu h1{
+      
+        margin: 10px 20px;
+        font-size: 1.6em;   
+    }
+
+    .menu nav {
+        margin: 20px 40px;
+        
+    }
+
+}
+    
+
+/*section contato*/
+.contato1{
+    background: #35424a;
+}
+
+
+.escreva1{
+    max-width: 940px;
+    margin: 0px auto;
+  
+}
+.escreva1 h2{
+    margin: 30px auto;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+
+    float: left;
+    
+}
+
+
+form{
+  margin: 40px auto;
+  
+}
+form input{
+    height: 30px;
+    width: 300px;
+    float: right;
+}
+
+form button{
+    height: 34px;
+    width: 110px;
+    color: white;
+    font-weight: bold;
+    background: #e8491d;
+    border-color: #e8491d;
+    float: right;
+    margin-left:5px ;
+    
+}
+
+.escreva1::after, .escreva1::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*responsive contato*/
+@media screen  and (max-width: 480px) {
+    .escreva1{
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 10px auto ;
+      
+    }
+    .escreva1 h2{  
+        margin: 20px auto;
+        font-size: 0.6em;
+        float: none;
+        text-align: center;
+
+    }
+
+    form{
+        margin: 10px auto; 
+    }
+
+    form input{
+        float :none;
+        height: 30px;
+        max-width: 470px;
+        margin:auto 5px;    
+    }
+
+    form button{
+       
+        height: 50px;
+        width: 40px;
+        margin:auto 2px ;
+        
+    }
+
+}
+/*responsive ipad*/
+@media screen and (max-width: 768px) {
+    .escreva1{
+        max-width: 768px;
+        margin: 0px auto;
+        
+      
+    }
+    .escreva1 h2{
+        margin: 20px 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+
+    }
+    
+    form{
+        margin: 20px 10px;
+        
+      }
+      form input{
+       
+          width: 250px;
+         
+      }
+      
+      form button{
+          height: 34px;
+          width: 100px;      
+      }
+}
+/*footer*/
+
+footer{
+    background: #e8491d;
+   
+}
+
+footer p{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/*responsive mobile footer*/
+@media screen  and (max-width: 480px) {
+   
+    footer p{
+       
+        font-size: 0.8em;
+    }
+}
+
+/*responsive ipad footer*/
+@media screen and (max-width: 768px) {
+ 
+
+    footer p{
+       
+        font-size: 1em;
+    }
+}
+

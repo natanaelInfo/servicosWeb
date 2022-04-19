@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.section-services{
+    background-color:#f4f4f4 ;
+}
+
+.services{
+    max-width: 940px;
+    margin:0 auto;
+}
+
+.services::after, .services::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.services > h3{
+ text-align: left;
+ margin:20px auto;
+}
+
+.services .list-services{
+   max-width: 65%;
+   margin-right: 5px;
+  
+}
+
+.list-services{
+    float: left;
+}
+.list-services ul li{
+    list-style: none;
+    background-color:#e6e6e6;
+    padding: 20px;
+    margin:5px auto;
+
+}
+
+.list-services ul li h3{
+  margin-bottom: 20px;
+}
+
+.list-services ul li p{
+    margin-bottom: 20px;
+}
+/*responsive mobile services*/
+@media screen  and (max-width: 480px) {
+    .services{
+        max-width: 480px;
+        margin:0 auto;
+    }
+
+    .services > h3{
+        text-align: center;
+       
+        font-size: 2em;
+    
+    }
+
+    .services .list-services{ 
+       
+        float: none;
+        clear: both;
+        
+    }
+
+
+    .list-services ul {
+    
+        width: 380px;
+        margin: auto 20px;
+        border-radius: 5px;
+       
+    }
+    .list-services ul li{
+
+        margin:10px auto;
+    }
+
+    .list-services ul li h3{
+    margin-bottom: 10px;
+    }
+
+    .list-services ul li p{
+        margin-bottom: 10px;
+    }
+   
+}
+
+/*responsive ipad*/
+@media screen and (max-width: 768px) {
+    .services{
+        max-width: 768px;
+        margin:0 auto;
+    }
+    
+    .services .list-services{
+        max-width: 60%;
+        margin-right: 5px;
+       
+     }
+
+
+}
+
+/*cotacão*/
+.services .servicos-cotacao{
+  
+    background: #35424a;
+    color: white;
+    max-width: 30%;
+    float: right;
+    margin-top: 6px;
+    margin-right:5px;
+    padding:  30px;
+    border-radius: 5px;
+}
+
+
+.servicos-cotacao h3{
+    margin-bottom: 20px;
+    text-align: left;
+   
+}
+
+.servicos-cotacao input{
+    max-width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.servicos-cotacao button{
+    height: 35px;
+    width: 100px;
+    background:#e8491d;
+    border-radius: 4px  ;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*responsive mobile cotação*/
+@media screen  and (max-width: 480px) {
+   
+    .services .servicos-cotacao{
+        
+        float: none;
+        clear: both;     
+        max-width: 75%;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .servicos-cotacao h3{
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 2em;
+       
+    }
+
+    .servicos-cotacao input{
+        width: 300px;
+        height: 30px;
+        margin:3px  auto ;
+        border-radius: 4px;
+    }
+    
+    .servicos-cotacao button{
+        height: 35px;
+        width: 250px;
+        margin: 3px auto 3px  30px;
+        border-radius: 4px  ;
+        font-weight: bold;
+     
+    }
+
+
+}
+
+
+
+

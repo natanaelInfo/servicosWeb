@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    max-width: 940px;
+    background: url('../img/showcase.png') no-repeat center center;
+  
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    max-width: 1400px;
+}
+
+main h1{
+    padding-top: 80px;
+    font-size: 3.5em;
+    text-align: center;
+    color: white;
+}
+
+main p{
+  
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+
+
+/*responsive main*/
+@media screen  and (max-width: 480px) {
+    
+    main{
+        max-width: 480px;
+   
+    }
+    main h1{
+        padding-top: 80px;
+        font-size: 1em;
+        text-align: center;
+    }
+    main p{
+  
+        font-size: 1em;
+       
+        text-align: center;
+        padding-top: 30px;
+        max-width: 440px;
+        
+    }
+
+
+}
+
+
+
+/*responsive ipad*/
+@media screen and (max-width: 768px) {
+    main{
+        max-width: 768px;
+       
+       
+    }
+
+    main h1{
+        padding-top: 70px;
+        font-size: 2.5em;      
+    }
+
+    main p{
+  
+        font-size: 1.2em; 
+        padding-top: 40px;
+  
+    }
+}
+
+/*servicos*/
+
+.servicos{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+.servicos1{
+    margin: 0 5px;
+}
+.servicos1::after, .servicos1::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.servicos1 > .descricao-html, .servicos1 > .descricao-css, .servicos1 > .descricao-brush{
+    max-width: 30%;
+    margin:auto 10px;
+    float: left;
+}
+.servicos1 img{
+    max-width: 100px;
+    margin: 10px auto;
+    padding:10px 60px;
+}
+
+.servicos1 h3{
+    padding: 10px 50px;
+    
+    margin:10px auto;
+  
+}
+
+.servicos1 p{
+    text-align:justify;
+   
+    line-height: 1.2em;
+    margin: 5px auto;
+}
+
+/*responsive mobile servicos*/
+@media screen  and (max-width: 480px) {
+    .servicos{
+        max-width: 480px;
+       
+    }
+
+    .servicos1 > .descricao-html, .servicos1 > .descricao-css, .servicos1 > .descricao-brush{
+        max-width: 90%;
+        margin:30px 10px 30px 35px;
+        float: none;
+    }
+    .servicos1 img{
+      
+        margin: 10px 35px;
+        padding:10px 60px;
+    }
+
+    .servicos1 h3{
+        padding: 10px 50px;
+        
+        margin: 10px 15px;
+      
+    }
+    .servicos1 p{
+      
+       
+        line-height: 1.2em;
+        margin: 5px 30px;
+    }
+   
+}
+
+/*responsive ipad*/
+@media screen and (max-width: 768px) {
+ 
+    .servicos1 h3{
+        padding: 10px 50px;
+        
+        margin: 10px 15px;
+      
+    }
+}
